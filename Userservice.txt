@@ -8,3 +8,7 @@ To see all the branch : git branch
 To see all the branch and remote branch : git branch --all.
 To go back to the previous back : git switch - 
 To delete the branch git branch -d branch name
+To see the commit history : git log
+To see the commit history of a particular file : git log --follow file name
+To see the graph of the commit history : git log --graph --oneline --decorate
+To merge the branch : git merge branch name
