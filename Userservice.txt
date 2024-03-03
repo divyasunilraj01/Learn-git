@@ -1,12 +1,135 @@
 Get user data....
 Process the data....
+To use git
+- dowload git
+- install git
+
+
+-git config --global --list
+
+To  set user name and email
+
+- git config --global user.name "your name"
+- git config --global user.email "your email"
+- git config --global credential.helper store
+
+Intialise git repository
+
+- git init
+-git status
+on branch master come by default we want to create main branch
+First we should delete .git from main folder
+-git status
+git init -b main
+It comes on main branch
+- git add.
+- git commit -m "your message"
+-git log
+You got the information of the commit history
+-git diff
+You can see the difference between the last commit and the current commit
+To remove the file from git
+- git rm --cached file name
+- git status
+- git commit -a -m "your message"
+To delete the file from git
+- git rm cached file name
+
+
+
+- git remote add origin https://github.com/user/repo.git
+- git push -u origin master
+
+- git clone https://github.com/user/repo.git
+- git add.
+- git commit -m "your message"
+- git push origin
+
+Remote repository
+sign up in github/ bitbucket/ gitlab
+gitlab is for private repository
+Sign in to github
+
+Create new repository
+Click on new repository
+repository name
+public
+choose license none
+create repository
+We use ssh to connect to github
+Open terminal
+make directory
+mkdir git repo name same as github
+to change directory
+cd git repo name
+To see list of files ls
+
+echo "# git repo name" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/user/repo.git
+git push -u origin master
+-git branch -M main
+-git ssh keygen -o
+list
+cd ssh
+ls -a
+cd id_rsa.pub
+copy the key
+go to github
+click on settings
+click on ssh and github
+click on new ssh key
+title
+paste the key
+click on add ssh key
+git push origin
+git status
+git add.
+git commit -m "your message"
+git push origin
+git status
+git log
+git checkout -b branch name
+git push origin branch name
+git checkout main
+git merge branch name
+git push origin
+git branch -d branch name
+git push origin --delete branch name
+git push origin --delete branch name
+git branch -D branch name
+git push origin --delete branch name
+To tag
+- git tag -a v1.0 -m "your message"
+- git tag
+- git push origin v1.0
+- git tag -d v1.0
+- git push origin --delete tag v1.0
+- git tag -d v1.0
+
+
+
+
+
+
+Instead of https use ssh
+git remote add origin git@github.com:user/repo.git
+git push -u origin master
+
+
+You can see https://github.com/new or ssh://github.com/new
+
+
+
 How to push repository  from local to remote?
 git push origin
 To create git branch : git switch -c branch name
 To work with branch : git switch branch name.
 To see all the branch : git branch
 To see all the branch and remote branch : git branch --all.
-To go back to the previous back : git switch - 
+To go back to the previous back : git switch -branch name.
 To delete the branch git branch -d branch name
 To see the commit history : git log
 To see the commit history of a particular file : git log --follow file name
